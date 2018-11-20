@@ -1,0 +1,7 @@
+# Customized Doxyfile for CWSW Lib component
+#   This configuration superclasses the component-specific Doxy configuration for this project, 
+#	and provides a customization of it specifically for this developer.
+
+@INCLUDE		 =  cwsw_lib.doxyfile
+
+DOT_PATH     =  "C:/_Programs/Graphviz2.38/bin"
