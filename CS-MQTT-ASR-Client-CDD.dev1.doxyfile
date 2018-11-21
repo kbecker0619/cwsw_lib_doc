@@ -1,0 +1,13 @@
+# Doxyfile for CS MQTT Client CDD
+#   This configuration superclasses the generic Doxy configuration for this project, and provides
+#   a customization of it specifically for Developer #1.
+
+@INCLUDE     =  CS-MQTT-ASR-Client-CDD.doxyfile
+
+PREDEFINED  +=  XPRJ_Debug_Win_MinGW=1
+
+INPUT       +=  
+
+EXCLUDE     +=  
+
+DOT_PATH     =  "C:/_Programs/Graphviz2.38/bin"
