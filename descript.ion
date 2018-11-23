@@ -4,3 +4,4 @@ cwsw_lib.klb.doxyfile Personalized Doxy project for developer 'klb'
 descript.ion 7-Zip file that provides file commentary
 Doxy_Layout.xml Doxy layout file.
 images Container for any documentation images for this component
+README.md This folder contains documentation specific to this component
