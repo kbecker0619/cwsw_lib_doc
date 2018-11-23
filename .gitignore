@@ -53,3 +53,5 @@ dkms.conf
 doxygen
 *.log
 *.ini
+CS-MQTT-ASR-Client-CDD.dev1.doxyfile
+CS-MQTT-ASR-Client-CDD.doxyfile
