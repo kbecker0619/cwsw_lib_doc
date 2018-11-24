@@ -1,6 +1,8 @@
 cwsw.doxyfile Doxy project foundation for CWSW components
-cwsw_lib.doxyfile Component-specific Doxy project
-cwsw_lib.klb.doxyfile Personalized Doxy project for developer 'klb'
+cwsw_lib.dox Top level for the documentation for this component
+cwsw_lib_design.dox Design documentation for this component
+cwsw_lib_integration.dox Integration guide for this component
+cwsw_lib_intro.dox Overview of this component
 descript.ion 7-Zip file that provides file commentary
 Doxy_Layout.xml Doxy layout file.
 images Container for any documentation images for this component
