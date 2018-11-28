@@ -1,4 +1,5 @@
 6+aA+6qewcwsw.doxyfile Doxy project foundation for CWSW components
+cwsw.doxyfile Component-specific Doxy project
 cwsw_lib.dox Top level for the documentation for this component
 cwsw_lib_design.dox Design documentation for this component
 cwsw_lib_integration.dox Integration guide for this component
