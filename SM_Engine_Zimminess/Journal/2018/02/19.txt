@@ -1,0 +1,14 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2018-02-19T21:06:47-05:00
+
+====== Monday 19 Feb 2018 ======
+
+on home system, installed the v2 ppc version of s32ds.
+
+after accepting the default workspace, the test build of cwsw_arch, "worked" except for a few includes path problems.
+
+created a new workspace, and it couldn't find gcc. not sure what went wrong
+
+copied the working workspace to the components dev folder, imported cwsw_arch, fixed a few things, and voila, it worked.
+

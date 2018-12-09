@@ -1,0 +1,17 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2018-02-06T17:04:54-05:00
+
+====== Tuesday 06 Feb 2018 ======
+
+continuing Calpyso experiment begun [[Journal:2018:01:31|Wednesday 31 Jan 2018]]
+
+1. in Calypso-based workspace, create new project from example. i want blinky lights and board support, so i selected "hello + pll + interrupts" from list of examples. this is a tri-core project, and i want to begin the "arch" component for calypso with one core, so i will work on moving the functionality in the 2nd and 3rd cores into the 1st core.
+2. move all unique functionality, including ISR table, to core0 project. couldn't test, because my board won't connect.
+3. symlinked ARCH's version of "projcfg.h", created new (additional) build target name:
+	* ''Debug_XC_MPC57xx_DevKit:Development and debugging on Windows and Linux desktop, using NXP Build Tools'' — copied from Debug
+4. due to a dependency, added cwsw_lib/
+5. added cmdline define "''XPRJ_${ConfigName}=1''"
+6. deleted command-line defines "''TURN_ON_CPU1''" and "''TURN_ON_CPU2''"
+7. not sure exactly what i did to make it build, but finally, it did build, after some futzing.
+8. added call to ''Init(Cwsw_Lib);''

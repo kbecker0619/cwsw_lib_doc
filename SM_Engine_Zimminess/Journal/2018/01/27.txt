@@ -1,0 +1,24 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2018-01-27T08:12:40-05:00
+
+====== Saturday 27 Jan 2018 ======
+
+as of last night, on my work Win VM, the LW/CVI DIO "works" well enough to continue, I can single-step in the way I want from MinGW, and the MPLAB embedded project runs mostly my code, rather than the MHC-generated code.
+
+I've come to the idea of late, that I need to flesh in my ARCH and BOARD projects, elevating them beyond mere containers for sharable things, to make it easier to isolate ARCh and BOARD matters and test in a more-controlled, UT-like environ. So that's what I'm embarking upon now.
+
+Going alphbetically, (but moreso, because Boards depend upon the MCU that's their heart), I'm going to create a real UT environment for cwsw-arch, supporting [[MinGW]] desktop, Linux desktop, make sure it runs in LW/CVI and maybe VS08, etc.
+
+To make setup easier, I'm going to copy the text here of the build targets from DIO, so I can paste them into ARCH and BOARD UT projects
+
+	''Debug_Linux_GCC:Development and debugging on Linux, using GCC''
+	''Debug_Win_MinGW:Development and debugging on Windows, using MinGW''
+	''Debug_Win_MZ2048EFM:Development and debugging on Windows, using Microchip XC Build Tools''
+
+In addition, I've resurrected my interest in my Calypso board, and I also want to bring up that old ST ARM7-based board. I'm going to create build targets for these now. In so doing, I noticed that I'm inconsistent in the way I select target names - [[MinGW]] and Linux both describe the tool chain, while the PIC32 target describes the arch, and my existing SAMV71 build target describes the board (which sits on top of the arch). Hmm, must give that some thought.
+	''Debug_XC_MPC57xx_DevKit:Development and debugging on Windows and Linux desktop, using NXP Build Tools''
+
+To each, need to add command-line symbol	''XPRJ_${ConfigName}=1''
+
+Added symlink to cwsw_lib, and that to include paths
