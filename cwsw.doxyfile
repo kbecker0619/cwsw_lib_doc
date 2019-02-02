@@ -2528,28 +2528,18 @@ DOT_CLEANUP            = YES
 
 
 # AUTOSAR API "FUNC()"
-#   This definition comes right from our Vector SIP's version of "osek.h".
-#   It is suitable for our Doxygenation purposes.
 PREDEFINED  +=  "FUNC(type,memclass)=type"
 
 # AUTOSAR API "CONST()"
-#   This definition comes right from our Vector SIP's version of "osek.h".
-#   It is suitable for our Doxygenation purposes.
 PREDEFINED  +=  "CONST(type,memclass)=const type"
 
 # AUTOSAR API "TASK()"
-#   This definition comes right from our Vector SIP's version of "osek.h".
-#   It is suitable for our Doxygenation purposes.
 PREDEFINED  +=  "TASK(x)=void x##func(void)"
 
 # AUTOSAR API "ISR()"
-#   This definition comes right from our Vector SIP's version of "osek.h".
-#   It is suitable for our Doxygenation purposes.
 PREDEFINED  +=  "ISR(x)=void x##func(void)"
 
 # AUTOSAR API "P2VAR()"
-#   This definition comes right from our Vector SIP's version of "osek.h".
-#   It is suitable for our Doxygenation purposes.
 PREDEFINED  +=  "P2VAR(ptrtype, memclass, ptrclass) ptrtype"
 
 
@@ -2558,33 +2548,28 @@ PREDEFINED  +=  "P2VAR(ptrtype, memclass, ptrclass) ptrtype"
 #   uage: @xreq SR001   RequirementTitle    Description of Software Requirement
 #   uage: @xreq{SR001}  RequirementTitle    Description of Software Requirement
 #
-#   Note: If a page exists of the name "mqtt_req", with a title of "Requirements", the doxy output
+#   Note: If a page exists of the name "cwsw_req", with a title of "Requirements", the doxy output
 #   will contain an anchor that can be linked to via the "@req" command below. If this page does 
 #   not exist in the doxy input files, a Related Pages will appear, but the expected 
 #   "RequirementTitle" and "Description of Software Requirement" fields will not appear, and the 
 #   anchor won't work. This is because of the way Doxy works, and there's not much we can do about 
 #   it as these aliases are defined.
-ALIASES     += "xreq=\xrefitem mqtt_req \"Software Requirement\" \"Software Requirement\" : \b "
-#   klb: i haven't been able to get anchors to work as i want them to. set aside this pursuit for now
-#LIASES     += "xreq{1}=\xrefitem mqtt_req \"Software Requirement\" \"List of Software Requirements\" \b \1 \anchor \1 "
-#LIASES     += "xreq{1}=   \xrefitem mqtt_req     \"Software Requirement\" \"Software Requirement\" \b \1 "
-ALIASES     += "xreq{1}=   \xrefitem mqtt_req     \"Software Requirement\" \"Software Requirement\"   \ref \1 "
+ALIASES     += "xreq=\xrefitem cwsw_req \"Software Requirement\" \"Software Requirement\" : \b "
+ALIASES     += "xreq{1}=   \xrefitem cwsw_req     \"Software Requirement\" \"Software Requirement\"   \ref \1 "
 
 
-# MQTT: This command refers to a requirement defined by an anchor somewhere. It can complement the
+# This command refers to a requirement defined by an anchor somewhere. It can complement the
 #   @xreq command.
 #
 #   usage: @req ReqID   [optional supplemental text, perhaps Requirement_Title]
 #   Usage: @req{ReqID}  [optional supplemental text, perhaps Requirement_Title]
 #
 #   When working as intended, the 2nd form will reference an anchor created by @xreq
-ALIASES     += "req=\n Implements or Supports Requirement: \ref mqtt_req \b "
-#   klb: i haven't been able to get anchors to work as i want them to. set aside this pursuit for now
-#ALIASES    += "req{1}=\n Implements or Supports Requirement: \ref \1 "
-ALIASES     += "req{1}=\n Implements or Supports Requirement: \ref mqtt_req \b \1 "
+ALIASES     += "req=\n Implements or Supports Requirement: \ref cwsw_req \b "
+ALIASES     += "req{1}=\n Implements or Supports Requirement: \ref cwsw_req \b \1 "
 
 
-# MQTT: Reference the context of the element being documented.
+# Reference the context of the element being documented.
 #
 #   usage: @context Keyword     [Supplemental Explanation]
 #   usage: @context{keyword}    [Supplemental Explanation]
@@ -2595,46 +2580,11 @@ ALIASES     += "req{1}=\n Implements or Supports Requirement: \ref mqtt_req \b \
 #   This command creates a Related Pages output.
 #
 #   Note: It is our recommendation that, rather than relying on Doxy to automatically produce a
-#   Related Page, you should manually create a page with the name "mqtt_context", and a title of 
+#   Related Page, you should manually create a page with the name "cwsw_context", and a title of 
 #   "Usage Contexts". Within this page, there should be a generic description for each context 
 #   keyword.
 #   If this is not done, Doxy will still create an appropriate Related Page, but it is likely that 
 #   Doxy will not be able to find the anchor required by the "\ref" phrase in the alias definition; 
 #   no other harm will arise.
-ALIASES     += "context=\xrefitem mqtt_context \"Usage Context\" \"List of Usage Contexts\" \ref "
-ALIASES     += "context{1}=\xrefitem mqtt_context \"Usage Context\" \"List of Usage Contexts\" \ref \1 "
-
-
-# MQTT: Describe the reentrancy ability of a function being documented.
-#
-#   usage: @reentrant   TRUE | FALSE
-#
-#   Semantically, this command applies only to functions. While not prohibited, it makes no sense
-#   to apply this to a variable.
-#
-#   FALSE means that the function is NOT safe to be called in a reentrant manner. 
-#   TRUE means that the function IS safe to be called in a reentrant manner. 
-#
-#   NOTE THAT ACHIEVING REENTRANCY IS DIFFICULT, AND ALL FUNCTIONS CLAIMING TO BE REENTRANT SHOULD 
-#   BE SUBJECT TO ADDITIONAL SCRUTINY BY THE REVIEW BOARD. There are many causes that would make a 
-#   function non-reentrant, and there are no generalized, boiler-plate rules that can be followed 
-#   that would ensure reentrancy, and there are no analysis tools that do a good job of evaluating 
-#   reentrancy.
-#
-#   Note: Doxygen has no ability to qualify arguments or do any error checking on an expected
-#   argument; therefore, it is entirely up to the discipline of the developers and the review
-#   board, to ensure the validity of the actual arguments in each invocation of this command.
-ALIASES     += "reentrant=\par Reentrancy: \e "
-
-
-# Handle the *_START_* and *_STOP_* macros that are used in conjunction with MemMap.h
-#   The problem being solved, is the [potentially huge] number of #define macros that have no value
-#   and are used only one time, or a very small number of times; these all show up in the details
-#   for the file where they're defined, but if you're trying to find a specific name, or find out
-#   all MemMap.h-related macros, it can be difficult. This pair of macros creates a Related Page
-#   that contains all of the documented macros.
-#
-#   usage:  MEMMAP_START_SEC_MACRO  /**< @memmap_start */
-#   usage:  MEMMAP_STOP_SEC_MACRO   /**< @memmap_stop */
-ALIASES     += "memmap_start=\xrefitem mqtt_memmap_start \"Start Macro\" \"Start macros used with MemMap.h\" "
-ALIASES     += "memmap_stop=\xrefitem mqtt_memmap_stop \"Stop Macro\" \"Stop macros used with MemMap.h\" "
+ALIASES     += "context=\xrefitem cwsw_context \"Usage Context\" \"List of Usage Contexts\" \ref "
+ALIASES     += "context{1}=\xrefitem cwsw_context \"Usage Context\" \"List of Usage Contexts\" \ref \1 "

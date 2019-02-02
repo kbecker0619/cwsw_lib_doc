@@ -11,9 +11,6 @@
 
 PROJECT_NAME	 = "CWSW Library Services"
 PROJECT_BRIEF	 = "Core library services for the CWSW family of components for embedded software."
-LAYOUT_FILE      = doc_lib/Doxy_Layout.xml
-IMAGE_PATH       = doc_lib/images
-EXCLUDE			+= doc_lib/images/README.md
 
 MSCGEN_PATH      = 
 DOT_PATH         = 
