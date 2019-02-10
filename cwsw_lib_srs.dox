@@ -1,0 +1,22 @@
+/** @file
+
+@page cwsw_req Requirements Summary
+
+@par Table of software requirements.
+
+| Section			| Requirement 															| Title 							| Comment	|
+| :---				| :---																	| :---								| :---		|
+| Operating State	| @anchor SR-LIB-0001 \b [SR-LIB-0001](md_doc_lib_cwsw_lib_srs.html#SR_LIB_0001)	| Determine initialization status	| |
+| ^					| @anchor SR-LIB-0003 \b SR-LIB-0003	| Initialize API					| |
+| Critical Section	| @anchor SR-LIB-0002 \b SR-LIB-0002	| Enable Critical Section 			| |
+
+\n
+
+@par Cross References
+
+*/
+
+/*
+
+
+*/

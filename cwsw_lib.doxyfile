@@ -32,6 +32,8 @@ EXCLUDE         += ../cwsw_lib/README.md
 INCLUDE_PATH    += ../cwsw_lib
 INCLUDE_PATH    += ../cwsw_lib/include
 
+
+# documentation inputs
 INPUT			+= doc_lib
 EXCLUDE			+= doc_lib/README.md
 
