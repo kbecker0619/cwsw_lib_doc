@@ -9,6 +9,8 @@
 | Operating State	| @anchor sr_lib_0001 [SR_LIB_0001](md_doc_lib_cwsw_lib_srs.html#SR_LIB_0001)	| Determine initialization status		| |
 | ^					| @anchor sr_lib_0003 [SR_LIB_0003](md_doc_lib_cwsw_lib_srs.html#SR_LIB_0003)	| Initialize API						| |
 | ^					| @anchor sr_lib_0004 [SR_LIB_0004](md_doc_lib_cwsw_lib_srs.html#SR_LIB_0004)	| Responsibilities of Initialize method | |
+| ^					| @anchor sr_lib_0006 [SR_LIB_0006](md_doc_lib_cwsw_lib_srs.html#SR_LIB_0006)	| Component's Uninitialized indication	| |
+| ^					| @anchor sr_lib_0007 [SR_LIB_0007](md_doc_lib_cwsw_lib_srs.html#SR_LIB_0007)	| Component's Uninitialized behavior	| |
 | Tasks Support		| @anchor sr_lib_0005 [SR_LIB_0005](md_doc_lib_cwsw_lib_srs.html#SR_LIB_0005)	| Tasking API							| |
 | Critical Section	| @anchor sr_lib_0002 [SR_LIB_0002](md_doc_lib_cwsw_lib_srs.html#SR_LIB_0002)	| Enable Critical Section 				| |
 
