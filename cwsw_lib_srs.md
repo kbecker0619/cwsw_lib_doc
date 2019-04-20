@@ -33,6 +33,13 @@ requirements specific to the Library component.
 | <a name="SR_LIB_0004">SR_LIB_0004</a>	| Responsibilities of Initialize method | The Initialize method shall set the component's operating internal state to initial status.	| Draft		| N/A			| (none)	|
 
 
+### Tasking API
+
+| ID 									| Title 								| Description 																					| Status 	| Trace From	| Comment 	|
+| :---:									| :---									| :---																							| :---		| :---			| :---		|
+| <a name="SR_LIB_0005">SR_LIB_0005</a>	| Tasking API							| The Component shall provide an API in support of OS tasks or threads.							| Draft		| N/A			| (none)	|
+
+
 ### Critical Sections / Protected Regions
 
 #### Provide Critical Section API
