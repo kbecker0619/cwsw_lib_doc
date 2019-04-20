@@ -3,6 +3,8 @@
 /** @page Lib_Design							Library Subsystem Design
  *	@tableofcontents
  *	@subpage Lib_Resources \n
+ *
+ *	@defgroup cwsw_lib_object_group	CWSW Library Component	
  */
 // *		@subpage Lib_Main_Obj_Diag \n
 // *		@subpage Lib_Responsibilities \n
