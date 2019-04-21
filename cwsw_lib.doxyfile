@@ -38,8 +38,13 @@ INPUT			+= doc_lib
 EXCLUDE			+= doc_lib/README.md
 
 
-# demo app / main input files
-INPUT			+= ../app
-
 # configuration inputs
 INCLUDE_PATH	+= ../cfg
+
+# demo app / main input files
+#INPUT			+= ../app
+
+# Unit test inputs
+INPUT			+= ../ut
+EXCLUDE			+= ../ut/README.md
+INCLUDE_PATH	+= ../ut
