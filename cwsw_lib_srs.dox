@@ -6,13 +6,14 @@
 
 | Section			| Requirement 																	| Title 								| Comment	|
 | :---				| :---																			| :---									| :---		|
-| Operating State	| @anchor SR_LIB_0001 [SR_LIB_0001](md_doc_lib_cwsw_lib_srs.html#SR_LIB_0001)	| Determine initialization status		| |
-| ^					| @anchor SR_LIB_0000 [SR_LIB_0000](md_doc_lib_cwsw_lib_srs.html#SR_LIB_0000)	| Initialize API						| |
+| Operating State	| @anchor SR_LIB_0000 [SR_LIB_0000](md_doc_lib_cwsw_lib_srs.html#SR_LIB_0000)	| Initialize API						| |
+| ^					| @anchor SR_LIB_0001 [SR_LIB_0001](md_doc_lib_cwsw_lib_srs.html#SR_LIB_0001)	| Determine initialization status		| |
 | ^					| @anchor SR_LIB_0002 [SR_LIB_0002](md_doc_lib_cwsw_lib_srs.html#SR_LIB_0002)	| Responsibilities of Initialize method | |
 | ^					| @anchor SR_LIB_0003 [SR_LIB_0003](md_doc_lib_cwsw_lib_srs.html#SR_LIB_0003)	| Component's Uninitialized indication	| |
 | ^					| @anchor SR_LIB_0004 [SR_LIB_0004](md_doc_lib_cwsw_lib_srs.html#SR_LIB_0004)	| Component's Uninitialized behavior	| |
 | Tasks Support		| @anchor SR_LIB_0200 [SR_LIB_0200](md_doc_lib_cwsw_lib_srs.html#SR_LIB_0200)	| Tasking API							| |
-| Critical Section	| @anchor SR_LIB_0301 [SR_LIB_0301](md_doc_lib_cwsw_lib_srs.html#SR_LIB_0301)	| Enter Critical Section 				| |
+| Critical Section	| @anchor SR_LIB_0300 [SR_LIB_0300](md_doc_lib_cwsw_lib_srs.html#SR_LIB_0300)	| Critical Section API 					| |
+| ^					| @anchor SR_LIB_0301 [SR_LIB_0301](md_doc_lib_cwsw_lib_srs.html#SR_LIB_0301)	| Enter Critical Section 				| |
 | ^                 | @anchor SR_LIB_0302 [SR_LIB_0302](md_doc_lib_cwsw_lib_srs.html#SR_LIB_0302)   | Leave Critical Section                | |
 | ^                 | @anchor SR_LIB_0303 [SR_LIB_0303](md_doc_lib_cwsw_lib_srs.html#SR_LIB_0303)   | Critical Section Nesting Level: Incrementation    | |
 | ^                 | @anchor SR_LIB_0304 [SR_LIB_0304](md_doc_lib_cwsw_lib_srs.html#SR_LIB_0304)   | Critical Section Nesting Level: Decrementation	| |
