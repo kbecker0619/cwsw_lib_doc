@@ -19,10 +19,10 @@
 | ^                 | @anchor SR_LIB_0304 [SR_LIB_0304](md_doc_lib_cwsw_lib_srs.html#SR_LIB_0304)   | Critical Section Nesting Level: Decrementation	| |
 | ^                 | @anchor SR_LIB_0305 [SR_LIB_0305](md_doc_lib_cwsw_lib_srs.html#SR_LIB_0305)   | Critical Section Nesting Level: Data range    	| |
 | ^					| @anchor SR_LIB_0306 [SR_LIB_0306](md_doc_lib_cwsw_lib_srs.html#SR_LIB_0306)	| Critical Section Nesting Level, Invalid value     | |
-| ^					| @anchor SR_LIB_0308 [SR_LIB_0308](md_doc_lib_cwsw_lib_srs.html#SR_LIB_0308)	| Enter Critical Section behavior, First Activation | |
-| ^					| @anchor SR_LIB_0309 [SR_LIB_0309](md_doc_lib_cwsw_lib_srs.html#SR_LIB_0309)	| Enter Critical Section behavior, Already Active   | |
-| ^                 | @anchor SR_LIB_0310 [SR_LIB_0310](md_doc_lib_cwsw_lib_srs.html#SR_LIB_0310)   | Leave Critical Section Behavior, Already Active   | |
-| ^                 | @anchor SR_LIB_0311 [SR_LIB_0311](md_doc_lib_cwsw_lib_srs.html#SR_LIB_0311)   | Leave Critical Section Behavior, Last Deactivation| |
+| ^					| @anchor SR_LIB_0307 [SR_LIB_0308](md_doc_lib_cwsw_lib_srs.html#SR_LIB_0307)	| Enter Critical Section behavior, First Activation | |
+| ^					| @anchor SR_LIB_0308 [SR_LIB_0309](md_doc_lib_cwsw_lib_srs.html#SR_LIB_0308)	| Enter Critical Section behavior, Already Active   | |
+| ^                 | @anchor SR_LIB_0309 [SR_LIB_0310](md_doc_lib_cwsw_lib_srs.html#SR_LIB_0309)   | Leave Critical Section Behavior, Already Active   | |
+| ^                 | @anchor SR_LIB_0310 [SR_LIB_0311](md_doc_lib_cwsw_lib_srs.html#SR_LIB_0310)   | Leave Critical Section Behavior, Last Deactivation| |
 
 \n
 
