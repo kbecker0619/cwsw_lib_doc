@@ -30,7 +30,7 @@ INPUT            = ../README.md
 INPUT           += ../src
 EXCLUDE         += ../cwsw_lib/README.md
 INCLUDE_PATH    += ../cwsw_lib
-INCLUDE_PATH    += ../cwsw_lib/include
+INCLUDE_PATH    += ../include
 
 
 # documentation inputs
