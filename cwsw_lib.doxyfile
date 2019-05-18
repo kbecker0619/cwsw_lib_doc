@@ -45,6 +45,6 @@ INCLUDE_PATH	+= ../cfg
 #INPUT			+= ../test/app
 
 # Unit test inputs
-INPUT			+= ../ut
-EXCLUDE			+= ../ut/README.md
-INCLUDE_PATH	+= ../ut
+INPUT			+= ../test/ut
+EXCLUDE			+= ../test/ut/README.md
+INCLUDE_PATH	+= ../test/ut
