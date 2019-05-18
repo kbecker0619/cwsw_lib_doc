@@ -27,7 +27,7 @@ PREDEFINED		+=  XPRJ_NB_Debug=1
 INPUT            = ../README.md
 
 # component input files
-INPUT           += ../cwsw_lib
+INPUT           += ../src
 EXCLUDE         += ../cwsw_lib/README.md
 INCLUDE_PATH    += ../cwsw_lib
 INCLUDE_PATH    += ../cwsw_lib/include
