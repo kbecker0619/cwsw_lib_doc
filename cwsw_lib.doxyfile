@@ -42,7 +42,7 @@ EXCLUDE			+= doc_lib/README.md
 INCLUDE_PATH	+= ../cfg
 
 # demo app / main input files
-#INPUT			+= ../app
+#INPUT			+= ../test/app
 
 # Unit test inputs
 INPUT			+= ../ut
