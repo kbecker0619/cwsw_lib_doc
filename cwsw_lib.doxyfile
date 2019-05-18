@@ -28,8 +28,7 @@ INPUT            = ../README.md
 
 # component input files
 INPUT           += ../src
-EXCLUDE         += ../cwsw_lib/README.md
-INCLUDE_PATH    += ../cwsw_lib
+EXCLUDE         += ../src/README.md
 INCLUDE_PATH    += ../include
 
 
@@ -39,12 +38,14 @@ EXCLUDE			+= doc_lib/README.md
 
 
 # configuration inputs
-INCLUDE_PATH	+= ../cfg
+INCLUDE_PATH	+= ../test/cfg
 
 # demo app / main input files
+#   don't enable if you also enable UT as input - competing versions of main()
 #INPUT			+= ../test/app
 
 # Unit test inputs
+#   don't enable if you also enable app as input - competing versions of main()
 INPUT			+= ../test/ut
 EXCLUDE			+= ../test/ut/README.md
 INCLUDE_PATH	+= ../test/ut
