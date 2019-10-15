@@ -175,7 +175,7 @@ extern "C" {
 #endif
 
 /*	For this component, equate simulated events with notification events. */
-#if defined(USE_NOTIFICATION_EVENTS)
+#if (USE_NOTIFICATION_EVENTS) && !defined(USE_SIMULATED_EVENTS)
 #define USE_SIMULATED_EVENTS	(true)
 #endif
 

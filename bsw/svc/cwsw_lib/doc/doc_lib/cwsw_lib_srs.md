@@ -29,7 +29,7 @@ requirements specific to the Library component.
 | :---:								| :---									| :---																							| :---		| :---			| :---		|
 | @anchor RQT_LIB_0000 SR_LIB_0000	| Initialize API						| The Component shall provide an API for initializing the component.							| Draft 	| N/A			| |
 | @anchor RQT_LIB_0001 SR_LIB_0001	| Determine initialization status		| The Component shall provide an API for determining initialization status.						| Draft		| SR_LIB_0000	| |
-| @anchor RQT_LIB_0002 SR_LIB_0002	| Responsibilities of Initialize method | The Initialize method shall set the component's operating internal state to initial status.	| Draft		| N/A			| |
+| @anchor RQT_LIB_0002 SR_LIB_0002	| Responsibilities of Initialize method | The Initialize method shall set the component's internal operating state to initial status.	| Draft		| N/A			| |
 | @anchor RQT_LIB_0003 SR_LIB_0003	| Component's Uninitialized indication	| If executed prior to initialization, the features of the component that have stateful behavior by design, shall return an `Uninitilialized` indication.	| Draft | N/A	| "Return" could be via callback, component-level attribute, function output parameter, function return code, etc. |
 | @anchor RQT_LIB_0004 SR_LIB_0004	| Component's Uninitialized behavior	| If executed prior to initialization, the features of the component that have stateful behavior by design, shall not change their operating state.			| Draft	| N/A	| |
 | **TASKING  API** ||||||

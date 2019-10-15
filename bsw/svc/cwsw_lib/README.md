@@ -2,6 +2,18 @@
 
 ## Overview
 
+```
+                    +-----+
+                +---| OS  |
++----------+    |   +-----+
+|          |<---+   +-----+
+| CWSW_LIB |<-------| BSW |
+|          |<---+   +-----+
++----------+    |   +-----+
+                +---| SWC |
+                    +-----+
+```
+
 This repo holds the full set of documents for the small CWSW Library.
 Being the building block upon which other CWSW components are built, it
 has no dependencies to other CWSW components.
