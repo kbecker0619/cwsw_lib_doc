@@ -1,0 +1,4 @@
+doxygen
+*.log
+*.ini
+html

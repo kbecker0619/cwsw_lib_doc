@@ -1,0 +1,40 @@
+# Customized Doxyfile for CWSW Lib component
+#   This configuration superclasses the component-specific Doxy configuration for this project, 
+#	and provides a customization of it specifically for this developer.
+
+# include the actual component doxy project
+@INCLUDE		 = doc_lib/cwsw_lib.doxyfile
+
+LAYOUT_FILE      = doc_lib/Doxy_Layout.xml
+IMAGE_PATH       = doc_lib/images
+EXCLUDE			+= doc_lib/images/README.md
+
+# specify front page for Doxy output
+#	note this makes another assumption about this file's location in the project tree
+INPUT            = ../README.md
+
+# component input files
+INPUT           += ../src
+INPUT           += ../include
+EXCLUDE         += ../src/README.md
+INCLUDE_PATH    += ../include
+
+
+# documentation inputs
+INPUT			+= doc_lib
+EXCLUDE			+= doc_lib/README.md
+
+
+# configuration inputs
+INPUT           += ../test/cfg
+INCLUDE_PATH	+= ../test/cfg
+
+# demo app / main input files
+#   don't enable if you also enable UT as input - competing versions of main()
+#INPUT			+= ../test/app
+
+# Unit test inputs
+#   don't enable if you also enable app as input - competing versions of main()
+INPUT			+= ../test/ut
+EXCLUDE			+= ../test/ut/README.md
+INCLUDE_PATH	+= ../test/ut
