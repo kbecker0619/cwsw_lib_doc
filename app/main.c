@@ -15,7 +15,7 @@
 
 // ----	System Headers --------------------------
 #include <stdio.h>
-#include <stdlib.h>     	/* EXIT_SUCCESS */
+#include <stdlib.h>			/* EXIT_SUCCESS */
 #include <limits.h>			/* INT_MAX */
 
 // ----	Project Headers -------------------------
