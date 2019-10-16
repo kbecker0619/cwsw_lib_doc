@@ -11,16 +11,19 @@
 // ----	Include Files ---------------------------------------------------------
 // ============================================================================
 
+#include "projcfg.h"
+
 // ----	System Headers --------------------------
 #include <stdio.h>
-#include <stdlib.h>
-#include <limits.h>	/* INT_MAX */
+#include <stdlib.h>     	/* EXIT_SUCCESS */
+#include <limits.h>			/* INT_MAX */
 
 // ----	Project Headers -------------------------
+#include "cwsw_lib.h"
 #include "cwsw_eventsim.h"
 
-// ----	Module Headers --------------------------
-#include "cwsw_lib.h"
+// ----	Project Headers -------------------------
+#include "cwsw_arch.h"
 
 
 // ============================================================================
@@ -70,22 +73,22 @@ main(void)
 {
 	tEventPayload ev = { 0 };
 
-	puts("!!!Hello World!!!"); /* prints !!!Hello World!!! */
 	if(!Get(Cwsw_Lib, Initialized))
 	{
 		PostEvent(evNotInit, ev);
 		(void)Init(Cwsw_Lib);
 		cwsw_assert(Get(Cwsw_Lib, Initialized), "Confirm initialization");
-
-		/* contrived example, not recommended, to exercise other features of the component */
-		cwsw_assert(1 == Cwsw_Critical_Protect(0), "Confirm critical section nesting count");
-		cwsw_assert(Cwsw_Critical_Release(0) == 0, "Confirm balanced critical region usage");
-		cwsw_assert(Init(Cwsw_Lib) == 2, "Confirm reinitialization return code");
-
-		Task(Cwsw_Lib);
 	}
 
-	PostEvent(evTerminateRequested, ev);
+	(void)Init(Cwsw_Arch);		// Cwsw_Arch__Init()
 
+	/* contrived example, not recommended, to exercise other features of the component */
+	cwsw_assert(1 == Cwsw_Critical_Protect(0), "Confirm critical section nesting count");
+	cwsw_assert(Cwsw_Critical_Release(0) == 0, "Confirm balanced critical region usage");
+	cwsw_assert(Init(Cwsw_Lib) == 2, "Confirm reinitialization return code");
+
+	Task(Cwsw_Lib);
+
+	PostEvent(evTerminateRequested, ev);
     return (EXIT_SUCCESS);
 }
