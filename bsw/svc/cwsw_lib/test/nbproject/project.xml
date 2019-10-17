@@ -13,6 +13,8 @@
                 <sourceRootElem>ut</sourceRootElem>
                 <sourceRootElem>cfg</sourceRootElem>
                 <sourceRootElem>../src</sourceRootElem>
+                <sourceRootElem>../inc</sourceRootElem>
+                <sourceRootElem>../../cwsw_lib_prj</sourceRootElem>
             </sourceRootList>
             <confList>
                 <confElem>

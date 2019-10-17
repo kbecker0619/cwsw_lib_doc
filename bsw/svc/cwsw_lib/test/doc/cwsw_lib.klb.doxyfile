@@ -7,11 +7,11 @@
 #	not the documentation submodule.
 #
 #	note this makes an assumption about the submodule name that holds this base config
-@INCLUDE		 = doc_lib/cwsw.doxyfile
+@INCLUDE		 	= ../../doc/cwsw.doxyfile
 
 # include this repo's local doxy project
-@INCLUDE		 	   =  cwsw_lib.doxyfile
+@INCLUDE		 	=  cwsw_lib.doxyfile
 
 # override the default location of dot with my own location.
-DOT_PATH     		   =  "C:/_Programs/Graphviz2.38/bin"
-PLANTUML_JAR_PATH      =  "C:/_Programs/plantuml" 
+#DOT_PATH     		=  "C:/_Programs/Graphviz2.38/bin"
+PLANTUML_JAR_PATH	=  "C:/_Programs/plantuml" 

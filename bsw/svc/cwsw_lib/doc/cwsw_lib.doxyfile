@@ -1,40 +1,14 @@
-# Customized Doxyfile for CWSW Lib component
-#   This configuration superclasses the component-specific Doxy configuration for this project, 
-#	and provides a customization of it specifically for this developer.
+# Doxyfile for CWSW Lib component
+#   This configuration superclasses the generic Doxy configuration for this project, and provides
+#   a customization of it specifically for this component.
 
-# include the actual component doxy project
-@INCLUDE		 = doc_lib/cwsw_lib.doxyfile
+PROJECT_NAME	 = "CWSW Library Services"
+PROJECT_BRIEF	 = "Core library services for the CWSW family of components for embedded software."
 
-LAYOUT_FILE      = doc_lib/Doxy_Layout.xml
-IMAGE_PATH       = doc_lib/images
-EXCLUDE			+= doc_lib/images/README.md
+MSCGEN_PATH      = 
+DOT_PATH         = 
+# override default values for graph generation (to address Doxy warning in logfile)
+DOT_GRAPH_MAX_NODES    = 150
 
-# specify front page for Doxy output
-#	note this makes another assumption about this file's location in the project tree
-INPUT            = ../README.md
-
-# component input files
-INPUT           += ../src
-INPUT           += ../include
-EXCLUDE         += ../src/README.md
-INCLUDE_PATH    += ../include
-
-
-# documentation inputs
-INPUT			+= doc_lib
-EXCLUDE			+= doc_lib/README.md
-
-
-# configuration inputs
-INPUT           += ../test/cfg
-INCLUDE_PATH	+= ../test/cfg
-
-# demo app / main input files
-#   don't enable if you also enable UT as input - competing versions of main()
-#INPUT			+= ../test/app
-
-# Unit test inputs
-#   don't enable if you also enable app as input - competing versions of main()
-INPUT			+= ../test/ut
-EXCLUDE			+= ../test/ut/README.md
-INCLUDE_PATH	+= ../test/ut
+# pick one of the supported IDEs to enable the appropriate code macros
+PREDEFINED		+=  XPRJ_NB_Debug=1

@@ -8,12 +8,13 @@
         <itemPath>cfg/projcfg.h</itemPath>
         <itemPath>cfg/projevtnames.h</itemPath>
       </logicalFolder>
-      <logicalFolder name="include" displayName="include" projectFiles="true">
-        <itemPath>../include/ctassert.h</itemPath>
-        <itemPath>../include/cwsw_eventsim.h</itemPath>
-        <itemPath>../include/ptypes.h</itemPath>
+      <logicalFolder name="inc" displayName="inc" projectFiles="true">
+        <itemPath>../inc/README.md</itemPath>
+        <itemPath>../inc/ctassert.h</itemPath>
+        <itemPath>../inc/cwsw_eventsim.h</itemPath>
+        <itemPath>../inc/cwsw_lib.h</itemPath>
+        <itemPath>../inc/ptypes.h</itemPath>
       </logicalFolder>
-      <itemPath>../include/cwsw_lib.h</itemPath>
     </logicalFolder>
     <logicalFolder name="ResourceFiles"
                    displayName="Resource Files"
@@ -22,6 +23,11 @@
     <logicalFolder name="SourceFiles"
                    displayName="Source Files"
                    projectFiles="true">
+      <logicalFolder name="cwsw_lib_prj"
+                     displayName="cwsw_lib_prj"
+                     projectFiles="true">
+        <itemPath>../../cwsw_lib_prj/CritSect.c</itemPath>
+      </logicalFolder>
       <logicalFolder name="src" displayName="src" projectFiles="true">
         <itemPath>../src/cwsw_lib.c</itemPath>
       </logicalFolder>
@@ -57,6 +63,8 @@
     <Elem>ut</Elem>
     <Elem>cfg</Elem>
     <Elem>../src</Elem>
+    <Elem>../inc</Elem>
+    <Elem>../../cwsw_lib_prj</Elem>
   </sourceRootList>
   <projectmakefile>Makefile</projectmakefile>
   <confs>
@@ -70,7 +78,7 @@
         <cTool>
           <standard>10</standard>
           <incDir>
-            <pElem>../include</pElem>
+            <pElem>../inc</pElem>
             <pElem>cfg</pElem>
           </incDir>
           <preprocessorList>
@@ -89,13 +97,17 @@
           <output>${TESTDIR}/TestFiles/f1</output>
         </linkerTool>
       </compileType>
-      <item path="../include/ctassert.h" ex="false" tool="3" flavor2="0">
+      <item path="../../cwsw_lib_prj/CritSect.c" ex="false" tool="0" flavor2="0">
       </item>
-      <item path="../include/cwsw_eventsim.h" ex="false" tool="3" flavor2="0">
+      <item path="../inc/README.md" ex="false" tool="3" flavor2="0">
       </item>
-      <item path="../include/cwsw_lib.h" ex="false" tool="3" flavor2="0">
+      <item path="../inc/ctassert.h" ex="false" tool="3" flavor2="0">
       </item>
-      <item path="../include/ptypes.h" ex="false" tool="3" flavor2="0">
+      <item path="../inc/cwsw_eventsim.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="../inc/cwsw_lib.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="../inc/ptypes.h" ex="false" tool="3" flavor2="0">
       </item>
       <item path="../src/cwsw_lib.c" ex="false" tool="0" flavor2="0">
         <cTool>
@@ -174,13 +186,17 @@
           </linkerLibItems>
         </linkerTool>
       </compileType>
-      <item path="../include/ctassert.h" ex="false" tool="3" flavor2="0">
+      <item path="../../cwsw_lib_prj/CritSect.c" ex="false" tool="0" flavor2="0">
       </item>
-      <item path="../include/cwsw_eventsim.h" ex="false" tool="3" flavor2="0">
+      <item path="../inc/README.md" ex="false" tool="3" flavor2="0">
       </item>
-      <item path="../include/cwsw_lib.h" ex="false" tool="3" flavor2="0">
+      <item path="../inc/ctassert.h" ex="false" tool="3" flavor2="0">
       </item>
-      <item path="../include/ptypes.h" ex="false" tool="3" flavor2="0">
+      <item path="../inc/cwsw_eventsim.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="../inc/cwsw_lib.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="../inc/ptypes.h" ex="false" tool="3" flavor2="0">
       </item>
       <item path="../src/cwsw_lib.c" ex="false" tool="0" flavor2="0">
       </item>
