@@ -15,7 +15,7 @@ https://stackoverflow.com/questions/5917249/git-symlinks-in-windows, answer 26
 
 ===== General =====
 * GIT within Cygwin works fine, **provided** you don't use any enhancement such as TortoiseGit. If you do, then you need to take extra measures to make Tortoise (or other) work. I've seen the [[https://gitlab.com/tortoisegit/tortoisegit/issues/2275|helps]] (and MANY other places), but haven't made a serious effort to make it work, because of ...
-* Personally, I really like [[https://www.sourcetreeapp.com/|SourceTree]] (no LInux) and (lesser) [[https://www.cycligent.com/git-tool|Cycligent Git Tool]] (works in both Linux and Windows), but it doesn't seem to work at all with Cygin's GIT. Also, Eclipse doesn't really know about GIT if its only incarnation is within Cygwin.
+* Personally, I really like [[https://www.sourcetreeapp.com/|SourceTree]] (no Linux version) and (lesser) [[https://www.cycligent.com/git-tool|Cycligent Git Tool]] (Linux + Windows), but it doesn't seem to work at all with Cygwin's GIT. Also, Eclipse doesn't really know about GIT if its only incarnation is within Cygwin.
 * conversely, if you install GIT after Cygwin, it seems that Cygwin knows about GIT
 Now, if you follow one of the [[Cygwin Home Folder|several methods available]] to make Cygwin's home folder to be your Windows user folder, then the .ssh folders will be shared, and Cygwin GIT works well with "official" GIT.
 
