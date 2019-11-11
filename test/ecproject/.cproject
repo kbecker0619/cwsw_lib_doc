@@ -52,8 +52,18 @@
 							<tool id="cdt.managedbuild.tool.gnu.cpp.linker.mingw.base.769474135" name="MinGW C++ Linker" superClass="cdt.managedbuild.tool.gnu.cpp.linker.mingw.base"/>
 						</toolChain>
 					</folderInfo>
+					<folderInfo id="cdt.managedbuild.config.gnu.mingw.exe.debug.1259350728.184554702" name="/" resourcePath="bsw/ecu/cwsw_arch/test">
+						<toolChain id="cdt.managedbuild.toolchain.gnu.mingw.base.1168217017" name="MinGW GCC" superClass="cdt.managedbuild.toolchain.gnu.mingw.base" unusedChildren="">
+							<tool id="cdt.managedbuild.tool.gnu.assembler.mingw.base.1649542723" name="GCC Assembler" superClass="cdt.managedbuild.tool.gnu.assembler.mingw.base.1491575512"/>
+							<tool id="cdt.managedbuild.tool.gnu.archiver.mingw.base.895846325" name="GCC Archiver" superClass="cdt.managedbuild.tool.gnu.archiver.mingw.base.315868434"/>
+							<tool id="cdt.managedbuild.tool.gnu.cpp.compiler.mingw.base.1179791319" name="GCC C++ Compiler" superClass="cdt.managedbuild.tool.gnu.cpp.compiler.mingw.base.2109448397"/>
+							<tool id="cdt.managedbuild.tool.gnu.c.compiler.mingw.base.890858838" name="GCC C Compiler" superClass="cdt.managedbuild.tool.gnu.c.compiler.mingw.base.1613245157"/>
+							<tool id="cdt.managedbuild.tool.gnu.c.linker.mingw.base.1411868541" name="MinGW C Linker" superClass="cdt.managedbuild.tool.gnu.c.linker.mingw.base.387861330"/>
+							<tool id="cdt.managedbuild.tool.gnu.cpp.linker.mingw.base.444431841" name="MinGW C++ Linker" superClass="cdt.managedbuild.tool.gnu.cpp.linker.mingw.base.769474135"/>
+						</toolChain>
+					</folderInfo>
 					<sourceEntries>
-						<entry excluding="bsw/ecu/cwsw_arch/test/app|bsw/svc/cwsw_lib/test/ut|bsw/ecu/cwsw_arch/cwsw_arch/test|bsw/svc/cwsw_lib/test/app|bsw/ecu/cwsw_arch/cwsw_arch/test/app" flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name=""/>
+						<entry excluding="bsw/ecu/cwsw_arch/test|bsw/ecu/cwsw_arch/test/app|bsw/svc/cwsw_lib/test/ut|bsw/ecu/cwsw_arch/cwsw_arch/test|bsw/svc/cwsw_lib/test/app|bsw/ecu/cwsw_arch/cwsw_arch/test/app" flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name=""/>
 					</sourceEntries>
 				</configuration>
 			</storageModule>

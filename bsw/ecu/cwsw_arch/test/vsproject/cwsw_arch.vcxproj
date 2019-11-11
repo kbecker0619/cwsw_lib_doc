@@ -13,7 +13,6 @@
   <PropertyGroup Label="Globals">
     <ProjectGuid>{3597A28B-947D-42EF-AC57-1CD89CD83502}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
-    <ProjectName>cwsw_test_app</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
@@ -44,7 +43,7 @@
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
       <Optimization>Disabled</Optimization>
-      <AdditionalIncludeDirectories>C:\_Projects\PersonalExploration\cwsw_sme_playground\app\cfg;C:\_Projects\PersonalExploration\cwsw_sme_playground\app\cfg\vs2010;C:\_Projects\PersonalExploration\cwsw_sme_playground\bsw\svc\cwsw_lib\inc;C:\_Projects\PersonalExploration\cwsw_sme_playground\bsw\ecu\cwsw_arch\inc\i386;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>../cfg;../../inc/i386;../cfg/vs2010;../stubs;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;XPRJ_Win_MSVC_$(Configuration)=1;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <MinimalRebuild>true</MinimalRebuild>
       <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
@@ -81,25 +80,23 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClInclude Include="..\..\app\cfg\projcfg.h" />
-    <ClInclude Include="..\..\app\cfg\projevtnames.h" />
-    <ClInclude Include="..\..\app\cfg\vs2010\stdbool.h" />
-    <ClInclude Include="..\..\bsw\ecu\cwsw_arch\inc\cwsw_arch_common.h" />
-    <ClInclude Include="..\..\bsw\ecu\cwsw_arch\inc\i386\cwsw_arch.h" />
-    <ClInclude Include="..\..\bsw\svc\cwsw_lib\inc\ctassert.h" />
-    <ClInclude Include="..\..\bsw\svc\cwsw_lib\inc\cwsw_eventsim.h" />
-    <ClInclude Include="..\..\bsw\svc\cwsw_lib\inc\cwsw_lib.h" />
-    <ClInclude Include="..\..\bsw\svc\cwsw_lib\inc\ptypes.h" />
+    <ClInclude Include="..\..\inc\cwsw_arch_common.h" />
+    <ClInclude Include="..\..\inc\i386\cwsw_arch.h">
+      <SubType>Designer</SubType>
+    </ClInclude>
+    <ClInclude Include="..\cfg\projcfg.h" />
+    <ClInclude Include="..\cfg\projevtnames.h" />
+    <ClInclude Include="..\stubs\ctassert.h" />
+    <ClInclude Include="..\stubs\cwsw_eventsim.h" />
+    <ClInclude Include="..\stubs\cwsw_lib.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="..\..\app\main.c" />
-    <ClCompile Include="..\..\bsw\ecu\cwsw_arch\src\i386\cwsw_arch.c" />
-    <ClCompile Include="..\..\bsw\svc\cwsw_lib\src\cwsw_lib.c" />
-    <ClCompile Include="..\..\bsw\svc\cwsw_lib_prj\CritSect.c" />
+    <ClCompile Include="..\..\src\i386\cwsw_arch.c" />
+    <ClCompile Include="..\app\sim_event_cb.c" />
+    <ClCompile Include="..\app\main.c" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="..\..\bsw\ecu\cwsw_arch\inc\i386\README.md" />
-    <None Include="..\..\bsw\svc\cwsw_lib\inc\README.md" />
+    <None Include="..\..\inc\i386\README.md" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
